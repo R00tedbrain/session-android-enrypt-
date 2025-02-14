@@ -50,6 +50,9 @@ dependencies {
     ksp("com.google.dagger:hilt-compiler:$daggerHiltVersion")
     ksp("androidx.hilt:hilt-compiler:$jetpackHiltVersion")
 
+    implementation 'com.journeyapps:zxing-android-embedded:4.2.0'
+    implementation 'com.google.zxing:core:3.4.1'
+    implementation "androidx.security:security-crypto:1.1.0-alpha03"
     implementation "net.java.dev.jna:jna:5.12.1@aar"
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
     implementation "androidx.core:core-ktx:$coreVersion"

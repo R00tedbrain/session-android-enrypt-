@@ -50,7 +50,7 @@ import org.session.libsession.messaging.sending_receiving.attachments.Attachment
 import org.session.libsession.messaging.sending_receiving.link_preview.LinkPreview as SignalLinkPreview
 import org.session.libsession.messaging.sending_receiving.quotes.QuoteModel as SignalQuote
 
-object MessageSender {
+object  MessageSender {
 
     // Error
     sealed class Error(val description: String) : Exception(description) {

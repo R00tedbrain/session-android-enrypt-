@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?colorPrimary"
+        android:paddingTop="32dp"
         app:contentInsetStart="0dp">
 
         <LinearLayout
