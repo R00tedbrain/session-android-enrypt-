@@ -424,6 +424,10 @@ dependencies {
 
     // Note: ZXing 3.5.3 is the latest stable release as of 2024/08/21
     implementation "com.google.zxing:core:$zxingVersion"
+
+    //corutinas nuevas
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
 }
 
 static def getLastCommitTimestamp() {

@@ -35,6 +35,7 @@
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
     <uses-permission android:name="android.permission.BROADCAST_STICKY" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <!-- tools:node="remove" se mantiene si quieres eliminar el uso de CHANGE_NETWORK_STATE -->
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" tools:node="remove" />
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
@@ -283,6 +284,13 @@
         <activity
             android:name="org.thoughtcrime.securesms.security.ExtraSecurityKeyPickerActivity"
             android:label="@string/extra_security"
+            android:exported="false" />
+
+        <!-- NUEVA ACTIVIDAD: ExtraSecurityActivity -->
+        <activity
+            android:name="org.thoughtcrime.securesms.security.ExtraSecurityActivity"
+            android:label="@string/extra_security"
+            android:screenOrientation="portrait"
             android:exported="false" />
 
         <!-- NUEVAS ACTIVIDADES (según tu petición) -->

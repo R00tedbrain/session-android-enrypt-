@@ -267,10 +267,13 @@ class ConversationActivityV2 : PassphraseRequiredActionBarActivity(), InputBarDe
 
         threadId
     }
-
     private val viewModel: ConversationViewModel by viewModels {
         viewModelFactory.create(threadId, MessagingModuleConfiguration.shared.getUserED25519KeyPair())
     }
+    // Exponemos el conversation ID de manera pública
+    val conversationId: Long
+        get() = viewModel.threadId
+
     private var actionMode: ActionMode? = null
     private var unreadCount = Int.MAX_VALUE
     // Attachments
@@ -310,7 +313,7 @@ class ConversationActivityV2 : PassphraseRequiredActionBarActivity(), InputBarDe
         get() = binding.conversationRecyclerView.isScrolledToWithin30dpOfBottom
 
     private val layoutManager: LinearLayoutManager?
-        get() { return binding.conversationRecyclerView.layoutManager as LinearLayoutManager? }
+        get() = binding.conversationRecyclerView.layoutManager as LinearLayoutManager?
 
     private val seed by lazy {
         var hexEncodedSeed = IdentityKeyUtil.retrieve(this, IdentityKeyUtil.LOKI_SEED)
@@ -363,11 +366,12 @@ class ConversationActivityV2 : PassphraseRequiredActionBarActivity(), InputBarDe
         adapter.visibleMessageViewDelegate = this
 
         // Register an AdapterDataObserver to scroll us to the bottom of the RecyclerView for if
-        // we're already near the the bottom and the data changes.
+        // we're already near the bottom and the data changes.
         adapter.registerAdapterDataObserver(ConversationAdapterDataObserver(binding.conversationRecyclerView, adapter))
 
         adapter
     }
+
 
     private val glide by lazy { Glide.with(this) }
     private val lockViewHitMargin by lazy { toPx(40, resources) }
