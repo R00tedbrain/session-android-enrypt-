@@ -6,9 +6,9 @@
 ![SESION](https://github.com/user-attachments/assets/a53211ca-7d2b-4be1-9346-363001a243f6)
 
 
-if want contribute for develop new fork, at time i doned a one layer more encryptiom, we must finish thread-scoop encryption for any chat to add the 2on layer
+If want contribute for develop new fork, at time i doned a one layer more encryptiom, we must finish thread-scoop encryption for any chat to add the 2on layer
 
-if want contribute or any quetion  here is my session ID
+if want contribute or any quetion  here is my session ID, for the moment i will be busy in other projects but i will try to fnish threadscop for any chat ID , private
 
 session ID: 0512735a4650ffaae7203dfaeff8439f4e88688cd1d4e2218884f1ec9b4eed7a7a
 
