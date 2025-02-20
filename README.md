@@ -16,9 +16,13 @@ Changelogs VS normal session:
 Changelog: Increase Key Seed Size from 128 to 256 Bits
 
 ·Key Generation: Updated KeyPairUtilities to generate a 256-bit (32-byte) random seed instead of the previous 128-bit (16-byte) seed.
+
 ·Backward Compatibility: Added logic to detect old 128-bit seeds and pad them to 256 bits, ensuring restored accounts still function properly.
+
 ·Mnemonic Support: Preserved existing mnemonic derivation code, which naturally supports 25-word phrases for 256-bit seeds (versus 13 words for 128-bit). No UI changes required.
+
 ·Storage & Persistence: Verified that IdentityKeyUtil and shared preferences logic remain compatible with the longer seeds (now 64 hex characters).
+
 ·Logging & Debugging: Introduced additional log statements in key generation, storage, and onboarding flows to assist with troubleshooting.
 
 
