@@ -29,8 +29,10 @@ Changelog: Increase Key Seed Size from 128 to 256 Bits
 Added commonlib : Module of https://github.com/R00tedbrain/Encrypt-Decrypt-AndroidAPK
 
 Added universal encrpyt layer "Extrasecurityactivity" On menu Settings , and on Chat windows menu,
+
 ·This add a layer that encrypt with AES256 gcm / Xchacha20  before encrypt with session protocol,  
 Steps : plain text > ExtraSecurityEncryption>sesion protocol = reciber = sesion protocoldecrypt>ExtrasecurityDecrypt>plaintext
+
 ·In settings can manage Key, import and share keys via QR
 
 
